@@ -114,7 +114,7 @@ After deployment is complete you can run the following command to retrieve the A
 
 ```bash
 aws cloudformation describe-stacks \
-    --stack-name sam-orderHandler \
+    --stack-name trips-datalake \
     --query 'Stacks[].Outputs'
 ```
 
