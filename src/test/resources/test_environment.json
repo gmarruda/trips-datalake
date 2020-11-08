@@ -1,0 +1,14 @@
+{
+	"CreateTripRecordFunction": {
+		"ENDPOINT_OVERRIDE": "http://172.16.123.1:8000/",
+		"TABLE_NAME": "trips"
+	},
+	"GetTripsByCityFunction": {
+		"ENDPOINT_OVERRIDE": "http://172.16.123.1:8000/",
+		"TABLE_NAME": "trips"
+	},
+	"GetTripsByCountryFunction": {
+		"ENDPOINT_OVERRIDE": "http://172.16.123.1:8000/",
+		"TABLE_NAME": "trips"
+	}
+}

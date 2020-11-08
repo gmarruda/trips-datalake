@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "ef9ef35f-a302-4fa0-b0f0-b15a387362ba",
+		"name": "Trips DataLake",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createTripRecord",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"country\": null,\n    \"city\": null,\n    \"dateTrip\": null,\n    \"reason\": null\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/trip",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"trip"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findByCity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/trip/Brazil/findByCity?city=Santos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"trip",
+						"Brazil",
+						"findByCity"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "Santos"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findByCountry",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/trip/findByCountry?country=Brazil",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"trip",
+						"findByCountry"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "Brazil"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
