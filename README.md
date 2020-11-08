@@ -132,12 +132,12 @@ sam package \
 
 sam deploy \
     --template-file packaged.yaml \
-    --stack-name sam-orderHandler \
+    --stack-name trips-datalake \
     --capabilities CAPABILITY_IAM \
     --parameter-overrides MyParameterSample=MySampleValue
 
 aws cloudformation describe-stacks \
-    --stack-name sam-orderHandler --query 'Stacks[].Outputs'
+    --stack-name trips-datalake --query 'Stacks[].Outputs'
 ```
 
 ## Bringing to the next level
